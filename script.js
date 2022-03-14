@@ -189,11 +189,7 @@ for (const i; i<=celulares.length; i++) {
 */
 
 /*
-let palabras = ["manazana", "pera", "banana", "kiwi", "naranja","pomelo"]
 
-
-
-resultado = palabras.filter(palabra => palabra.length >4)
 
 document.write(resultado)
 */
@@ -210,44 +206,4 @@ function crearLlave(nombre,modelo,precio){
 }
 
 
-let documentFragment = document.createDocumentFragment()
 
-for (let i = 1; i<=20; i++){
-    let modeloRandom = Math.round(Math.random()*10000);
-    let precioRandom = Math.round(Math.random()*10+30);
-    let llave = crearLlave(`llave ${i}`,`modelo ${modeloRandom}`, precioRandom)
-    let div = document.createElement("DIV");
-    div.tabIndex = i;
-    div.classList.add(`item-${i}`,'flex-item');
-    div.innerHTML = llave[0] + llave[1] + llave[2] + llave[3];
-    documentFragment.appendChild(div);
-}
-
-contenedor.appendChild(documentFragment)
-
-*/
-
-
-/*
-Consigna:
-Crear un juego de mesa mediante un script por turnos para 2 jugadores
-1-El juego debe contar con 50 casilleros
-2-Las casillas 10/20/30/40 avanzan 2 casilleros
-3-Las casillas 7/14/21/28/35/42/49 retroceden 3 casilleros
-4-La casilla 23 vuelve al inicio
-5-Dado rolea de 1 a 6
-
-*/
-
-/*
-array = ["manzana", "pera","tomate","manzana", "pera","tomate","manzana", "pera","tomate"];
-
-
-for (let i = 0; i <= array.length; i++) {
-    
-    console.log(i + array[i])
-}
-
-
-
- */
